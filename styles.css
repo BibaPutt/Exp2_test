@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #0d0d0d; /* Warm black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  position: relative;
+}
+
+.logo {
+  width: 200px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.3); /* Light white glow */
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+}
