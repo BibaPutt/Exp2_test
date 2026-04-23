@@ -1,0 +1,12 @@
+{
+
+    "name":"PWA",
+    "short_name":"PWA",
+    "start_url":"./",
+    "display":"standalone",
+    "icon":[{
+        "src":"icons.png",
+        "sizes":"512x512",
+        "type":"image/png"
+    }]
+}
