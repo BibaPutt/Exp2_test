@@ -1,0 +1,27 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(const MaterialApp(home: LayoutApp()));
+
+class LayoutApp extends StatelessWidget {
+  const LayoutApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text("Exp 2: Layouts")),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Text("Top Row:", style: TextStyle(fontSize: 20)),
+          Row(
+            children: [
+              Expanded(child: Container(height: 50, color: Colors.red)),
+              Expanded(child: Container(height: 50, color: Colors.green)),
+              Expanded(child: Container(height: 50, color: Colors.blue)),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
